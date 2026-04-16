@@ -10,7 +10,6 @@ body {
 
 .header {
   width: 100%;
-  max-width: auto;
   height: 83px;
   padding-right: 174px;
   padding-left: 174px;
@@ -86,7 +85,6 @@ body {
 
 main {
   width: 100%;
-  max-width: auto;
   height: auto;
   opacity: 1;
 }
