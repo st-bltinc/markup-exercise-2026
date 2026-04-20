@@ -349,7 +349,7 @@ body {
   .header-inner {
     flex-direction: column;
     height: auto;
-    padding: 68px 174px;
+    padding: 68px 20px;
     gap: 10px;
     text-align: center;
   }
