@@ -268,8 +268,6 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 2px 0;
-  font-size: 1rem;
   gap: 10px;
 }
 
@@ -292,8 +290,8 @@ body {
   font-size: 13px;
   font-family: Helvetica, Arial, sans-serif;
   outline: none;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 8px 12px;
+  min-height: 47px;
 }
 
 .form-submit {
