@@ -4,6 +4,7 @@
     --text-light: #A2A2A2;
     --border: #e0e0e0;
     --white: #fff;
+    --footer-bg: #DD1B57;
 }
 
 * {
@@ -207,6 +208,7 @@ main {
     padding: 64px 120px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .service-bg-text {
@@ -276,8 +278,8 @@ main {
 }
 
 .message-headline {
-    font-size: 36px;
-    font-weight: 900;
+    font-size: 40px;
+    font-weight: 700;
     color: var(--primary);
     line-height: 1.5;
     margin-bottom: 24px;
@@ -285,8 +287,8 @@ main {
 }
 
 .message-sub {
-    font-size: 15px;
-    color: var(--text-light);
+    font-size: 18px;
+    color: var(--text);
     margin-bottom: 48px;
 }
 
@@ -299,8 +301,8 @@ main {
 }
 
 .ceo-avatar {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     flex-shrink: 0;
     overflow: hidden;
@@ -310,6 +312,7 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(2);
 }
 
 .message-text {
@@ -323,8 +326,14 @@ main {
     text-decoration: underline;
 }
 
+.message-text-below {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
 .office-image-wrap {
-    max-width: 840px;
+    max-width: 100%;
     margin: 48px auto 0;
     border-radius: 4px;
     overflow: hidden;
@@ -332,7 +341,9 @@ main {
 
 .office-img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 11/ 4;
+    object-fit: cover;
+    object-position: center 70%;
     display: block;
 }
 
@@ -413,25 +424,14 @@ footer {
 }
 
 .footer-nav a {
-    color: rgba(255, 255, 255, 0.85);
+    color: white;
     font-size: 13px;
     text-decoration: none;
     cursor: pointer;
     transition: color 0.2s;
 }
 
-.footer-nav a:hover {
-    color: white;
-}
-
 .footer-copy {
-    color: rgba(255, 255, 255, 0.65);
+    color: white;
     font-size: 12px;
-}
-
-/* ===== DIVIDER ===== */
-.divider {
-    height: 1px;
-    background: var(--border);
-    margin: 0 120px;
 }
