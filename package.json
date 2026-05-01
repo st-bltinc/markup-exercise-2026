@@ -1,13 +1,25 @@
 {
-  "name": "markup-exercise-2026-intermediate",
+  "name": "markup-exercise-2026",
   "version": "1.0.0",
-  "private": true,
+  "description": "",
+  "main": "index_3.html",
+  "devDependencies": {
+    "vite": "^8.0.10"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "vite": "^6.3.2"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/st-bltinc/markup-exercise-2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/st-bltinc/markup-exercise-2026/issues"
+  },
+  "homepage": "https://github.com/st-bltinc/markup-exercise-2026#readme"
 }

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>START</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_3.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header__logo">
+            <img src="logo.svg" alt="START">
+        </div>
+        <nav>
+            <a class="header__nav-link" href="#page-home">ホーム</a>
+            <a class="header__nav-link" href="#page-message">メッセージ</a>
+            <a class="header__nav-link" href="#page-company">会社概要</a>
+        </nav>
+        <div class="hamburger">
+            <input type="checkbox" id="menu-btn-check" aria-label="メニューを開く">
+            <label for="menu-btn-check" class="hamburger__btn"><span></span></label>
+            <div class="hamburger__menu">
+                <ul class="hamburger__list">
+                    <li class="hamburger__item">
+                        <a class="hamburger__link" href="#page-home">ホーム</a>
+                    </li>
+                    <li class="hamburger__item">
+                        <a class="hamburger__link" href="#page-message">メッセージ</a>
+                    </li>
+                    <li class="hamburger__item">
+                        <a class="hamburger__link" href="#page-company">会社概要</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--  HOME PAGE  -->
+    <div id="page-home" class="page">
+        <div class="hero">
+            <img class="hero__img" src="hero.png" alt="STARTヒーロー画像">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <div class="hero__title">START</div>
+                <div class="hero__sub">仕事に最高のスタートを。</div>
+            </div>
+        </div>
+
+        <main>
+            <section class="news">
+                <div class="news__label">ニュース</div>
+                <div class="news__list">
+                    <div class="news__item">
+                        <span class="news__date">2030.02.10</span>
+                        <span class="news__text">コーポレートサイトをリニューアルしました。</span>
+                    </div>
+                    <div class="news__item">
+                        <span class="news__date">2030.02.08</span>
+                        <span class="news__text">採用を強化中です！一緒に働きませんか？</span>
+                    </div>
+                    <div class="news__item">
+                        <span class="news__date">2030.02.02</span>
+                        <span
+                            class="news__text">人材紹介SNS『スタート』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service">
+                <div class="service__label">サービス</div>
+                <div class="service__bg-text">SERVICE</div>
+                <div class="service__cards">
+
+                    <div class="service__card">
+                        <img class="service__card-icon" src="work.svg" alt="人材紹介業">
+                        <div class="service__card-name">人材紹介業</div>
+                        <div class="service__card-desc">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</div>
+                    </div>
+
+                    <div class="service__card">
+                        <img class="service__card-icon" src="location_city.svg" alt="スクール事業">
+                        <div class="service__card-name">スクール事業</div>
+                        <div class="service__card-desc">オンラインでWeb制作を学べるスクールを運営しています。</div>
+                    </div>
+
+                    <div class="service__card">
+                        <img class="service__card-icon" src="desktop_windows_24dp.svg" alt="Webメディア運営">
+                        <div class="service__card-name">Webメディア運営</div>
+                        <div class="service__card-desc">人事系メディアやWebデザイン関連のメディアなどを複数運営しています。</div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer__nav">
+                <a class="footer__nav-link" href="#page-home">ホーム</a>
+                <a class="footer__nav-link" href="#page-message">メッセージ</a>
+                <a class="footer__nav-link" href="#page-company">会社概要</a>
+            </div>
+            <div class="footer__copy">©START</div>
+        </footer>
+    </div>
+
+    <!-- ==================== MESSAGE PAGE ==================== -->
+    <div id="page-message" class="page">
+        <div class="hero--sub">
+            <img class="hero__img" src="hero.png" alt="メッセージヒーロー画像">
+            <div class="hero__overlay"></div>
+            <div class="hero__page-title">メッセージ</div>
+        </div>
+
+        <main>
+            <section class="message">
+                <div class="message__headline">「仕事」をきっかけに<br>人生の新しいスタートを！</div>
+                <div class="message__sub">大事なお仕事探しを応援させてください</div>
+
+                <div class="message__body">
+                    <div class="message__avatar">
+                        <img class="message__avatar-img" src="ceo.png" alt="代表取締役社長">
+                    </div>
+                    <p class="message__text">
+                        はじめまして。代表取締役社長のショーン・デイビット・ジュニアです。<br>
+                        私はそこそこ幸せです。それは仕事が楽しいからです。もちろん仕事イコール人生ではありません。でも仕事は人生の大事な基盤のように思っています。<br>
+                        株式会社STARTは、みなさんが仕事をきっかけに理想の人生を実現する手助けをしています。幸せにつながるお仕事紹介サービス <a href="#">『スタート』</a>
+                        や、共通の目標を目指す仲間が
+                    </p>
+                </div>
+                <p class="message__text message__text--below">
+                    見つかる人材紹介SNS <a href="#">『ゴール』</a> を運営しています。また、Webデザインの基礎スキルを身につけられるスクール <a href="#">『Webの学校』</a>
+                    も随時開講しています。
+                </p>
+
+                <div class="message__office">
+                    <img class="message__office-img" src="office.png" alt="オフィスの様子">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer__nav">
+                <a class="footer__nav-link" href="#page-home">ホーム</a>
+                <a class="footer__nav-link" href="#page-message">メッセージ</a>
+                <a class="footer__nav-link" href="#page-company">会社概要</a>
+            </div>
+            <div class="footer__copy">©START</div>
+        </footer>
+    </div>
+
+    <!-- ==================== COMPANY PAGE ==================== -->
+    <div id="page-company" class="page">
+        <div class="hero--sub">
+            <img class="hero__img" src="hero.png" alt="会社概要ヒーロー画像">
+            <div class="hero__overlay"></div>
+            <div class="hero__page-title">会社概要</div>
+        </div>
+
+        <main>
+            <section class="company">
+                <table class="company__table">
+                    <tr>
+                        <th>社名</th>
+                        <td>株式会社START</td>
+                    </tr>
+                    <tr>
+                        <th>設立</th>
+                        <td>2025.02.10</td>
+                    </tr>
+                    <tr>
+                        <th>代表取締役</th>
+                        <td>ショーン・デイビット・ジュニア</td>
+                    </tr>
+                    <tr>
+                        <th>資本金</th>
+                        <td>10,000,000円</td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>〒555-5555 東京都千代田区 スタートビルディング 606</td>
+                    </tr>
+                </table>
+
+                <div class="company__map">
+                    <span class="company__map-label">Google Map</span>
+                </div>
+                <a class="company__map-link">Google mapで見る</a>
+
+                <div class="company__news">
+                    <div class="news__item">
+                        <span class="news__date">2030.02.10</span>
+                        <span class="news__text">コーポレートサイトをリニューアルしました。</span>
+                    </div>
+                    <div class="news__item">
+                        <span class="news__date">2030.02.08</span>
+                        <span class="news__text">採用を強化中です！一緒に働きませんか？</span>
+                    </div>
+                    <div class="news__item">
+                        <span class="news__date">2030.02.02</span>
+                        <span
+                            class="news__text">人材紹介SNS『スタート』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer__nav">
+                <a class="footer__nav-link" href="#page-home">ホーム</a>
+                <a class="footer__nav-link" href="#page-message">メッセージ</a>
+                <a class="footer__nav-link" href="#page-company">会社概要</a>
+            </div>
+            <div class="footer__copy">©START</div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
