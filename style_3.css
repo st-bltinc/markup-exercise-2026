@@ -27,7 +27,13 @@ body {
     flex-direction: column;
 }
 
-.page--active {
+/* ハッシュが一致したページを表示 */
+.page:target {
+    display: flex;
+}
+
+/* ハッシュなし（初期表示）はホームを表示 */
+body:not(:has(.page:target)) #page-home {
     display: flex;
 }
 
@@ -81,8 +87,15 @@ nav {
     transition: color 0.2s;
 }
 
-.header__nav-link:hover,
-.header__nav-link--active {
+.header__nav-link:hover {
+    color: var(--primary);
+}
+
+/* ハッシュに応じてアクティブなリンクを強調 */
+body:not(:has(.page:target)) .header__nav-link[href="#page-home"],
+body:has(#page-home:target) .header__nav-link[href="#page-home"],
+body:has(#page-message:target) .header__nav-link[href="#page-message"],
+body:has(#page-company:target) .header__nav-link[href="#page-company"] {
     color: var(--primary);
 }
 

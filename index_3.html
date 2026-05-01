@@ -14,14 +14,13 @@
 <body>
 
     <header>
-        <div class="header__logo" onclick="showPage('home');">
+        <div class="header__logo">
             <img src="logo.svg" alt="START">
         </div>
         <nav>
-            <a id="nav-home" class="header__nav-link header__nav-link--active" href="#"
-                onclick="showPage('home');">ホーム</a>
-            <a id="nav-message" class="header__nav-link" href="#" onclick="showPage('message');">メッセージ</a>
-            <a id="nav-company" class="header__nav-link" href="#" onclick="showPage('company');">会社概要</a>
+            <a class="header__nav-link" href="#page-home">ホーム</a>
+            <a class="header__nav-link" href="#page-message">メッセージ</a>
+            <a class="header__nav-link" href="#page-company">会社概要</a>
         </nav>
         <div class="hamburger">
             <input type="checkbox" id="menu-btn-check" aria-label="メニューを開く">
@@ -29,13 +28,13 @@
             <div class="hamburger__menu">
                 <ul class="hamburger__list">
                     <li class="hamburger__item">
-                        <a class="hamburger__link" href="#" onclick="showPage('home');">ホーム</a>
+                        <a class="hamburger__link" href="#page-home">ホーム</a>
                     </li>
                     <li class="hamburger__item">
-                        <a class="hamburger__link" href="#" onclick="showPage('message');">メッセージ</a>
+                        <a class="hamburger__link" href="#page-message">メッセージ</a>
                     </li>
                     <li class="hamburger__item">
-                        <a class="hamburger__link" href="#" onclick="showPage('company');">会社概要</a>
+                        <a class="hamburger__link" href="#page-company">会社概要</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +42,7 @@
     </header>
 
     <!--  HOME PAGE  -->
-    <div id="page-home" class="page page--active">
+    <div id="page-home" class="page">
         <div class="hero">
             <img class="hero__img" src="hero.png" alt="STARTヒーロー画像">
             <div class="hero__overlay"></div>
@@ -102,9 +101,9 @@
 
         <footer>
             <div class="footer__nav">
-                <a class="footer__nav-link" href="#" onclick="showPage('home');">ホーム</a>
-                <a class="footer__nav-link" href="#" onclick="showPage('message');">メッセージ</a>
-                <a class="footer__nav-link" href="#" onclick="showPage('company');">会社概要</a>
+                <a class="footer__nav-link" href="#page-home">ホーム</a>
+                <a class="footer__nav-link" href="#page-message">メッセージ</a>
+                <a class="footer__nav-link" href="#page-company">会社概要</a>
             </div>
             <div class="footer__copy">©START</div>
         </footer>
@@ -147,9 +146,9 @@
 
         <footer>
             <div class="footer__nav">
-                <a class="footer__nav-link" href="#" onclick="showPage('home');">ホーム</a>
-                <a class="footer__nav-link" href="#" onclick="showPage('message');">メッセージ</a>
-                <a class="footer__nav-link" href="#" onclick="showPage('company');">会社概要</a>
+                <a class="footer__nav-link" href="#page-home">ホーム</a>
+                <a class="footer__nav-link" href="#page-message">メッセージ</a>
+                <a class="footer__nav-link" href="#page-company">会社概要</a>
             </div>
             <div class="footer__copy">©START</div>
         </footer>
@@ -213,31 +212,14 @@
 
         <footer>
             <div class="footer__nav">
-                <a class="footer__nav-link" href="#" onclick="showPage('home');">ホーム</a>
-                <a class="footer__nav-link" href="#" onclick="showPage('message');">メッセージ</a>
-                <a class="footer__nav-link" href="#" onclick="showPage('company');">会社概要</a>
+                <a class="footer__nav-link" href="#page-home">ホーム</a>
+                <a class="footer__nav-link" href="#page-message">メッセージ</a>
+                <a class="footer__nav-link" href="#page-company">会社概要</a>
             </div>
             <div class="footer__copy">©START</div>
         </footer>
     </div>
 
-    <script>
-
-        function showPage(pageId) {
-            document.querySelectorAll('.page').forEach(function (p) {
-                p.classList.remove('page--active');
-            });
-            document.getElementById('page-' + pageId).classList.add('page--active');
-
-            document.querySelectorAll('.header__nav-link').forEach(function (a) {
-                a.classList.remove('header__nav-link--active');
-            });
-            document.getElementById('nav-' + pageId).classList.add('header__nav-link--active');
-
-            window.scrollTo(0, 0);
-        }
-
-    </script>
 </body>
 
 </html>
